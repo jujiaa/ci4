@@ -58,6 +58,10 @@ $routes->get('penjualan/tambah',            'Penjualan::tambah');
 $routes->post('penjualan/simpan',           'Penjualan::simpan');
 $routes->get('penjualan/detail/(:segment)', 'Penjualan::detail/$1');
 
+// Laporan
+$routes->get('laporan/pelanggan', 'Laporan::pelanggan');
+$routes->get('laporan/produk',    'Laporan::produk');
+
 // Uji Transaksi (hanya non-production)
 if (ENVIRONMENT !== 'production') {
     $routes->get('uji-transaksi',           'UjiTransaksi::index');

@@ -33,7 +33,7 @@ class ProdukModel extends Model
             'nama_produk' => [
                 'label' => 'Nama Produk',
                 'rules' => 'required|max_length[100]',
-            ],
+            ],  
             'satuan' => [
                 'label' => 'Satuan',
                 'rules' => 'required|max_length[20]',
@@ -92,7 +92,7 @@ class ProdukModel extends Model
             // like() dengan true di param ke-4 → ILIKE di driver Postgre
             $builder->like('nama_produk', $keyword, 'both', null, true);
         }
-
+        
         $builder->orderBy('kode_produk', 'ASC');
 
         // Hitung total untuk pager
@@ -104,9 +104,7 @@ class ProdukModel extends Model
         return ['data' => $data, 'total' => $total];
     }
 
-    /**
-     * Ambil semua produk (untuk datalist di form penjualan)
-     */
+    // Ambil semua produk (untuk datalist di form penjualan)
     public function semuaProduk(): array
     {
         return $this->orderBy('kode_produk')->findAll();

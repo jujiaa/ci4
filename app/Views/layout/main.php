@@ -36,7 +36,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= str_starts_with(uri_string(), 'penjualan') ? 'active fw-bold' : '' ?>"
-                       href="<?= base_url('penjualan') ?>">🧾 Penjualan</a>
+                       href="<?= base_url('penjualan') ?>">🧾 Transaksi Penjualan</a>
                 </li>
                 <?php if (ENVIRONMENT !== 'production'): ?>
                 <li class="nav-item">
@@ -46,6 +46,14 @@
                 <?php endif; ?>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= base_url('db-test') ?>">🔌 DB Test</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link <?= str_starts_with(uri_string(), 'laporan/pelanggan') ? 'active fw-bold' : '' ?>"
+                       href="<?= base_url('laporan/pelanggan') ?>">📊 Per Pelanggan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= str_starts_with(uri_string(), 'laporan/produk') ? 'active fw-bold' : '' ?>"
+                       href="<?= base_url('laporan/produk') ?>">📈 Laporan Produk</a>
                 </li>
             </ul>
         </div>

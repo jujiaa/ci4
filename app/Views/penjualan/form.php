@@ -3,12 +3,6 @@
 
 <h2 class="mb-3">🧾 <?= esc($title) ?></h2>
 
-<?php if (session()->getFlashdata('error')): ?>
-    <div class="alert alert-danger">
-        ❌ <?= session()->getFlashdata('error') ?>
-    </div>
-<?php endif; ?>
-
 <!-- Datalist produk untuk input[list] di baris detail -->
 <datalist id="daftarProduk">
     <?php foreach ($produk as $pr): ?>

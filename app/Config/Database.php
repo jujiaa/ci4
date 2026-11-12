@@ -13,7 +13,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'postgres',
-        'password'     => 'postgres',
+        'password'     => 'Fira@2026',
         'database'     => 'db_penjualan',
         'DBDriver'     => 'Postgre',   // HARUS persis "Postgre"
         'DBPrefix'     => '',
@@ -37,7 +37,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'postgres',
-        'password'     => 'postgres',
+        'password'     => 'Fira@2026',
         'database'     => 'db_penjualan_test',
         'DBDriver'     => 'Postgre',   // HARUS persis "Postgre"
         'DBPrefix'     => '',
